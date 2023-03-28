@@ -8,9 +8,6 @@ export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <div className="app">
-        <Button variant="primary" />
-        <Button variant="secondary" />
-        <Button variant="success" />
         <Button />
       </div>
 
