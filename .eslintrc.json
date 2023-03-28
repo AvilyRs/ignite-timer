@@ -34,5 +34,10 @@
         "always"
     ],
     "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "18.2.0"
+    }
   }
 }
