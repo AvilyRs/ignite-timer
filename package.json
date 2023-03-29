@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint-fix": "eslint src --ext .ts,.tsx --fix",
-    "lint-find": "eslint src --ext .ts,.tsx"
+    "lint-find": "eslint src --ext .ts,.tsx",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -24,6 +25,7 @@
     "@vitejs/plugin-react": "^3.1.0",
     "eslint": "^8.36.0",
     "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
   }
