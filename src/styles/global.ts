@@ -12,8 +12,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   :focus {
-    outline: 0;
-    box-shadow: 0 0 0 2px ${props => props.theme['green-500']};
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: 3px;
+    outline-color: ${props => props.theme['green-500']};
   }
 
   body {
@@ -22,12 +24,13 @@ export const GlobalStyle = createGlobalStyle`
     background: ${props => props.theme['gray-900']};
   }
 
-  body, textarea, button {
+  body, textarea, button, input {
     font-family: Roboto, sans-serif;
     font-weight: 400;
   }
 
   button {
+    cursor: pointer;
     color: ${props => props.theme.white};
     border: none;
   }
