@@ -44,7 +44,7 @@
     "react/jsx-key": "error",
     "react/no-array-index-key": "warn",
     "react/jsx-uses-vars": "error",
-    "react/jsx-max-props-per-line": [1, { "maximum": 1 }]
+    "react/jsx-max-props-per-line": [1, { "maximum": 2 }]
   },
   "settings": {
     "react": {
