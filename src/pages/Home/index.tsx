@@ -28,16 +28,21 @@ export function Home() {
     resolver: zodResolver(newCycleFormValidationSchema)
   });
 
-  const { handleSubmit, watch, /* reset */ } = newCycleForm;
+  const { handleSubmit, watch, reset } = newCycleForm;
 
   const iconSize = 24;
 
   const taskInputWatcher = watch('task');
   const isSubmitDisabled = !taskInputWatcher;
 
+  function handleCreateNewCycle(data: NewCycleFormProps) {
+    createNewCycle(data);
+    reset();
+  }
+
   return (
     <HomeContainer>
-      <form onSubmit={handleSubmit(createNewCycle)}>
+      <form onSubmit={handleSubmit(handleCreateNewCycle)}>
 
         <FormProvider {...newCycleForm}>
           <NewCycleForm />
